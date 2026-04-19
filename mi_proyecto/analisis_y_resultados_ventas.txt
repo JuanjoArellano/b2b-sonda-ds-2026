@@ -1,0 +1,83 @@
+========================================
+ANALISIS DE VENTAS 
+Ejercicio: Listas, Tuplas y Diccionarios
+Curso: b2b-sonda-ds-2026
+Nombre: Juan José Arellano
+Fecha: 2026-04-19
+========================================
+
+
+PASO 1: LISTA DE VENTAS ORIGINAL
+
+Se cargaron 9 ventas correspondientes a 3 productos
+(Tomate, Papa, Palta) durante los meses de enero,
+febrero y marzo de 2026. Precios referenciales ODEPA.
+
+{'fecha': '2026-01-08', 'producto': 'Tomate', 'cantidad': 8, 'precio': 900}
+{'fecha': '2026-01-15', 'producto': 'Papa', 'cantidad': 20, 'precio': 450}
+{'fecha': '2026-01-22', 'producto': 'Palta', 'cantidad': 6, 'precio': 2100}
+{'fecha': '2026-02-04', 'producto': 'Tomate', 'cantidad': 10, 'precio': 850}
+{'fecha': '2026-02-12', 'producto': 'Papa', 'cantidad': 18, 'precio': 470}
+{'fecha': '2026-02-20', 'producto': 'Palta', 'cantidad': 4, 'precio': 1950}
+{'fecha': '2026-03-06', 'producto': 'Tomate', 'cantidad': 12, 'precio': 950}
+{'fecha': '2026-03-14', 'producto': 'Papa', 'cantidad': 25, 'precio': 430}
+{'fecha': '2026-03-21', 'producto': 'Palta', 'cantidad': 7, 'precio': 2200}
+
+PASO 2: INGRESOS TOTALES
+
+Se iteró sobre cada venta multiplicando cantidad x precio.
+Los resultados se acumularon en una variable suma.
+
+Total generado: $91110
+
+PASO 3: PRODUCTO MAS VENDIDO
+
+Se construyó un diccionario con la cantidad total
+vendida por producto sumando todas sus ventas.
+
+Tomate: 30 kg
+Papa: 63 kg
+Palta: 17 kg
+
+Producto mas vendido: Papa con 63 kg
+
+PASO 4: PRECIO PROMEDIO POR PRODUCTO
+
+Se usaron tuplas para guardar (suma_ingresos, cantidad)
+por producto. El promedio se calculó como suma / cantidad.
+
+Tomate: $903 por kg
+Papa: $448 por kg
+Palta: $2106 por kg
+
+PASO 5: INGRESOS POR DIA
+
+Se acumularon los ingresos agrupando por fecha.
+
+2026-01-08: $7200
+2026-01-15: $9000
+2026-01-22: $12600
+2026-02-04: $8500
+2026-02-12: $8460
+2026-02-20: $7800
+2026-03-06: $11400
+2026-03-14: $10750
+2026-03-21: $15400
+
+PASO 6: RESUMEN DE VENTAS POR PRODUCTO
+
+Se consolidaron cantidad total, ingresos y precio
+promedio en un diccionario anidado por producto.
+
+Tomate:
+  Cantidad total: 30 kg
+  Ingresos totales: $27100
+  Precio promedio: $903
+Papa:
+  Cantidad total: 63 kg
+  Ingresos totales: $28210
+  Precio promedio: $448
+Palta:
+  Cantidad total: 17 kg
+  Ingresos totales: $35800
+  Precio promedio: $2106
